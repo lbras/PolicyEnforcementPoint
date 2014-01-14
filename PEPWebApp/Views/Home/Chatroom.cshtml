@@ -88,13 +88,7 @@
                 // Format new messages
                 var newMessages = "";
                 for (var i = 0; i < data.length; ++i) {
-
-                    var origin = "";
-                    if (data[i].origin !== "") {
-                        origin = " (" + data[i].origin + ")";
-                    }
-
-                    newMessages += data[i].username + origin + ": " + data[i].message + "\n";
+                    newMessages += data[i].username + ": " + data[i].message + "\n";
                     lastMsgId = data[i].id;
                 }
 
