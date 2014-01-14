@@ -75,7 +75,7 @@
         // Message polling (1 second)
         function pollChatServer() {
 
-            $.getJSON("/messages", { "lastMsgId": lastMsgId }, function (data) {
+            $.getJSON("@(ViewBag.Host)messages", { "lastMsgId": lastMsgId }, function (data) {
 
                 if (!data) return;
 
